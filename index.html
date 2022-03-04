@@ -1,0 +1,116 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Erizo Dev</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">    
+</head>
+<body>
+
+    <nav>
+        <div class="nav-wrapper">
+            <a href="#!" class="brand-logo"><img src="imgs/ErizoDevLogo.png" alt="Erizo Dev Logo" /></a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="#inicio">INICIO</a></li>
+                <li><a href="#portafolio">PORTAFOLIO</a></li>
+                <li><a href="#contacto">CONTACTO</a></li> 
+            </ul>
+        </div>
+    </nav>
+    
+    <ul class="sidenav" id="mobile-demo">
+        <li><a href="#inicio">INICIO</a></li>
+        <li><a href="#portafolio">PROYECTOS</a></li>
+        <li><a href="#contacto">CONTACTO</a></li> 
+    </ul>
+
+    <div class="center contenido" id="inicio">
+        <h1>ERIZO DEV</h1>
+        <div class="linea"></div>
+        <h5>Diseño y Desarrollo Web</h3>
+    </div>
+
+    <div class="redes">
+        <a href=""><img src="imgs/instagram-logo-240.png" alt="Instagram"></a>
+        <a href=""><img src="imgs/github-logo-240.png" alt="Github"></a>
+        <a href=""><img src="imgs/whatsapp-logo-240.png" alt="Whatsapp"></a>
+    </div>
+
+    <div class="center portafolio" id="portafolio">
+        <h2>Portafolio</h2>
+        <div class="carousel ">
+            <a class="carousel-item " href="#one!"><img class="z-depth-3" src="imgs/Proyectos/proyecto1.png"></a>
+            <a class="carousel-item" href="#two!"><img class="z-depth-3" src="imgs/Proyectos/proyecto2.jpg"></a>
+            <a class="carousel-item" href="#three!"><img class="z-depth-3" src="imgs/Proyectos/proyecto3.jpg"></a>
+            <a class="carousel-item" href="#four!"><img class="z-depth-3" src="imgs/Proyectos/proyecto4.jpg"></a>   
+        </div>
+        <div class="info-proy">
+            <span>Ramen Today</span>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus autem minima nemo, placeat quidem, ea aliquid deserunt animi corporis esse laboriosam aliquam nam perspiciatis hic laborum similique facere quas architecto.</p>     
+        </div>
+    </div>
+
+
+    <div class="container contacto" id="contacto">
+        <div class="row info">
+            <div class="col l6 s12">
+                <div class="nosotros">
+                    <h2 class="center">Nosotros</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas suscipit, minus pariatur quibusdam, enim natus quos placeat nostrum id esse nam? 
+                        Laborum est molestias natus adipisci quia eum pariatur dolore?
+                    </p>
+                </div>
+            </div>
+            <div class="col l6 s12 ">
+                <div class="contact container">
+                    <form class="col s12 z-depth-4" action="https://formsubmit.co/d.romeldiaz@gmail.com" method="post">
+                        <h2 class="center ">Contacto</h2>
+                        <div class="row">
+                          <div class="input-field col s12">
+                            <i class="material-icons prefix">account_circle</i>
+                            <input id="nombre" name="nombre" type="text" class="validate" required>
+                            <label for="nombre">Nombre</label>
+                          </div>
+                          <div class="input-field col s12">
+                            <i class="material-icons prefix">email</i>
+                            <input id="correo" name="correo" type="email" class="validate" required>
+                            <label for="coreo">Correo</label>
+                          </div>
+                          <div class="input-field col s12">
+                            <i class="material-icons prefix">mode_edit</i>
+                            <textarea id="mensaje" name="mensaje" class="materialize-textarea" required></textarea>
+                            <label for="mensaje">Mensaje</label>
+                          </div>
+                          <div class="col s12 center">
+                            <button class="btn">Enviar</button>
+                          </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>        
+    </div>
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.sidenav');
+            var instances = M.Sidenav.init(elems);
+            var elems = document.querySelectorAll('.carousel');
+            var instances = M.Carousel.init(elems, {
+                shift: 200,
+                dist: -120,
+                duration: 250,
+                noWrap: true, 
+            });
+          });
+        //M.AutoInit();
+    </script>
+</body>
+</html>

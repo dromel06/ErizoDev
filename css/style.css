@@ -1,0 +1,288 @@
+@import url("https://fonts.googleapis.com/css2?family=Carrois+Gothic&family=Carrois+Gothic+SC&family=Carter+One&display=swap");
+body {
+  background-color: #272727;
+}
+
+nav {
+  background-color: #272727;
+  border-bottom: 4px solid #EBEBEB;
+  height: 70px;
+  position: fixed;
+  z-index: 10;
+}
+
+nav ul {
+  margin-right: 10px;
+}
+
+nav ul li > a {
+  font-family: "Carrois Gothic", sans-serif;
+  color: #EBEBEB;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+}
+
+.sidenav {
+  background-color: #272727;
+}
+
+.sidenav li > a {
+  font-family: "Carrois Gothic", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  color: #EBEBEB;
+}
+
+.brand-logo img {
+  margin-left: 10px;
+  max-width: 70px;
+}
+
+.contenido {
+  display: block;
+  margin: 0 auto;
+  height: 82vh;
+  width: 90vw;
+  padding-top: 30vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contenido h1 {
+  position: relative;
+  display: block;
+  margin: 0;
+  font-family: "Carter One", cursive;
+  font-size: 10vw;
+  color: #EBEBEB;
+  text-align: center;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
+  .contenido h1 {
+    font-size: 20vw;
+  }
+}
+
+.contenido div {
+  position: relative;
+  display: inline-block;
+  border: 2px solid #EBEBEB;
+  width: 60vw;
+}
+
+.contenido div::after {
+  content: '';
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  background-color: #EBEBEB;
+  top: -8;
+  right: -10;
+}
+
+.contenido div::before {
+  content: '';
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  background-color: #EBEBEB;
+  top: -8;
+  left: -10;
+}
+
+.contenido h5 {
+  font-family: "Carrois Gothic", sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 3.5vh;
+  display: block;
+  color: #EBEBEB;
+  float: center;
+  margin-left: 32vw;
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+  .contenido h5 {
+    margin-left: 28vw;
+    font-size: 1.8vh;
+  }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
+  .contenido h5 {
+    margin-left: 25vw;
+    font-size: 1.3vh;
+  }
+}
+
+.redes {
+  display: block;
+  position: relative;
+  margin: 0;
+  left: 10px;
+  width: 10vw;
+  height: 16vh;
+}
+
+.redes img {
+  display: block;
+  width: 5vh;
+}
+
+.portafolio {
+  height: 90vh;
+  width: 90vw;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+  display: block-inline;
+  padding-top: 12vh;
+  float: center;
+}
+
+.portafolio h2 {
+  font-family: "Carrois Gothic SC", sans-serif;
+  margin: 0;
+  padding-top: 10px;
+  color: #EBEBEB;
+  position: relative;
+}
+
+.portafolio .carousel {
+  float: center;
+  position: relative;
+  width: 90vw;
+  height: 62vh;
+}
+
+.portafolio .carousel .carousel-item {
+  width: 70vh;
+  padding-top: 0;
+  margin-top: 0;
+  top: -12vh;
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+  .portafolio .carousel .carousel-item {
+    width: 75%;
+  }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
+  .portafolio .carousel .carousel-item {
+    width: 100%;
+  }
+}
+
+.portafolio .info-proy {
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  top: -10vh;
+  font-family: "Carrois Gothic", sans-serif;
+  color: #EBEBEB;
+  width: 30vw;
+}
+
+.portafolio .info-proy span {
+  font-size: 5vh;
+  font-style: bold;
+}
+
+.portafolio .info-proy p {
+  float: center;
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+  .portafolio .info-proy {
+    top: -8vh;
+    width: 80vw;
+  }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
+  .portafolio .info-proy {
+    top: -25vh;
+    width: 80vw;
+  }
+}
+
+.contacto {
+  height: 100vh;
+}
+
+.contacto h2 {
+  font-family: "Carrois Gothic SC", sans-serif;
+  margin: 0;
+  padding-top: 10px;
+  color: #EBEBEB;
+  position: relative;
+}
+
+.contacto .info {
+  padding-top: 25vh;
+  color: #EBEBEB;
+}
+
+.contacto .contact {
+  width: 60vh;
+}
+
+.contacto .contact .input-field {
+  margin-top: 30px;
+}
+
+.contacto .contact .input-field i {
+  color: #EBEBEB;
+}
+
+.contacto .contact .input-field input:focus + label, .contacto .contact .input-field textarea:focus + label {
+  color: gold;
+}
+
+.contacto .contact .input-field input:focus, .contacto .contact .input-field textarea:focus {
+  border-bottom: 1px solid gold;
+  -webkit-box-shadow: 0 1px 0 0 gold;
+          box-shadow: 0 1px 0 0 gold;
+}
+
+.contacto .contact .input-field .prefix.active {
+  color: gold;
+}
+
+.contacto .contact .input-field input, .contacto .contact .input-field textarea {
+  color: #EBEBEB;
+}
+
+.contacto .contact button {
+  width: 20vh;
+  background-color: #383838;
+}
+
+.contacto .contact button:hover {
+  background-color: gold;
+  color: #383838;
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+  .contacto .contact {
+    width: 50vh;
+    padding-top: 50px;
+  }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
+  .contacto .contact {
+    width: 40vh;
+    padding-top: 30px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
